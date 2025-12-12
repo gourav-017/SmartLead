@@ -24,7 +24,7 @@ app.get('/api/health', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.json({ status: 'OK', message: 'Smart Lead backend is running' });
+  res.send('Welcome to the Smart Lead API');
 });
 
 
