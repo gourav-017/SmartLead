@@ -46,10 +46,10 @@ const LeadForm = ({ onSuccess }) => {
   };
 
   return (
-    <div className="bg-white rounded-xl p-8 mb-8 shadow-md hover:shadow-lg transition-shadow">
+    <div className="bg-white rounded-xl p-6 sm:p-8 mb-8 shadow-md hover:shadow-lg transition-shadow">
       <form onSubmit={handleSubmit} className="flex flex-col gap-5">
         <div className="flex flex-col gap-2.5">
-          <label htmlFor="names" className="font-semibold text-gray-700 text-base">
+          <label htmlFor="names" className="font-semibold text-gray-700 text-sm sm:text-base">
             Enter Names (comma-separated):
           </label>
           <input
@@ -59,7 +59,7 @@ const LeadForm = ({ onSuccess }) => {
             onChange={(e) => setNamesInput(e.target.value)}
             placeholder="e.g., Peter, Aditi, Ravi, Satoshi"
             disabled={loading}
-            className="px-4 py-3 border-2 border-gray-200 rounded-lg text-base transition-all focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 disabled:bg-gray-100 disabled:cursor-not-allowed"
+            className="px-4 py-3 border-2 border-gray-200 rounded-lg text-sm sm:text-base transition-all focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 disabled:bg-gray-100 disabled:cursor-not-allowed"
           />
           <p className="text-xs text-gray-500">
             Separate multiple names with commas
@@ -68,7 +68,7 @@ const LeadForm = ({ onSuccess }) => {
         <button
           type="submit"
           disabled={loading || !namesInput.trim()}
-          className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-lg text-base font-semibold cursor-pointer transition-all hover:shadow-lg hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none flex items-center justify-center gap-2"
+          className="w-full sm:w-auto px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-lg text-sm sm:text-base font-semibold cursor-pointer transition-all hover:shadow-lg hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none flex items-center justify-center gap-2"
         >
           {loading ? (
             <>
