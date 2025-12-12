@@ -1,4 +1,4 @@
-export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api' || "https://smartlead-wss5.onrender.com/api";
 
 export const API_ENDPOINTS = {
   LEADS: '/leads',
