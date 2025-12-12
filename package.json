@@ -1,0 +1,21 @@
+{
+  "name": "smart-lead-automation",
+  "version": "1.0.0",
+  "description": "Smart Lead Automation System - Full Stack MERN Application",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev",
+    "dev-backend": "cd backend && npm run dev",
+    "build-frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "mern",
+    "lead-enrichment",
+    "automation",
+    "api-integration"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
