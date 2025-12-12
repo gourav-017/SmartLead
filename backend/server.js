@@ -23,6 +23,12 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Smart Lead API is running' });
 });
 
+app.get('/', (req, res) => {
+  res.json({ status: 'OK', message: 'Smart Lead backend is running' });
+});
+
+
+
 // Background job scheduler - runs every 5 minutes
 cron.schedule('*/5 * * * *', () => {
   console.log('Running scheduled CRM sync job...');
@@ -36,7 +42,7 @@ async function startServer() {
 
 
     // Only listen when not running in a serverless environment (e.g., Vercel)
-    if (!process.env.NODE_ENV!=="production") {
+    if (process.env.NODE_ENV!=="production") {
       app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
       });
