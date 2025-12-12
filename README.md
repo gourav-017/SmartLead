@@ -200,7 +200,7 @@ Alternatively, you can use the frontend stats dashboard which displays real-time
 
 ## 🚀 Deployment
 
-### Backend Deployment (e.g., Heroku, Railway, Render)
+### Backend Deployment (e.g.,Render)
 
 1. Set environment variables:
    - `MONGODB_URI`
@@ -209,7 +209,7 @@ Alternatively, you can use the frontend stats dashboard which displays real-time
 
 2. Update frontend `API_URL` in `frontend/src/App.js` to point to deployed backend
 
-### Frontend Deployment (e.g., Vercel, Netlify)
+### Frontend Deployment (e.g., render)
 
 1. Build the frontend:
    ```bash
